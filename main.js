@@ -88,6 +88,7 @@ function play () {
   chanceArea.textContent = `Remaining chances: ${chances}`
 
   history = []
+  numberHistory.textContent = 'Your Guesses:'
  }
 
 pickRandomNum()
