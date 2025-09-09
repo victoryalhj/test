@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Guess the Number Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Guess the Number</h1>
-    <div id="result-area">Result:</div>
-    <!-- <div id="result-area">Up! or Down! or That's right! or 경고메세지 or 이미입력한 값입니다</div> -->
-    <!-- <h2>남은기회: </h2> -->
-    <div>
-      <input type="number" id="user-input" placeholder="👉 Guess a number between 1 and 100">
-      <button id="play-button">Go</button>
-      <button id="resetBtn">Reset</button>
+    <div class="box">
+      <h1>Guess the Number</h1>
+      <!-- <h2 id="range-input">Enter a number between 1 and 100!</h2> -->
+      <h2 id="chance-area">Remaining chances: 3</h2>
+      <div id="result-area">Result:</div>
+      <div id="history-area">Your Guesses:</div>
+      <div id="number-area">The number is: </div>
+
+      <div class="button-section">
+        <input type="number" id="user-input" placeholder="👉 Guess a number between 1 and 100">
+        <button id="play-button">Go</button>
+        <button id="reset-button">Reset</button>
+      </div>
     </div>
 
     <script src="./main.js"></script>
